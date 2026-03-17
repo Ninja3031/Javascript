@@ -1,8 +1,10 @@
-/* let loggedIn = 1
+// let loggedIn = 1
 
-let booleanLoggedIn = Boolean(loggedIn)
+// let booleanLoggedIn = Boolean(loggedIn)
 
-console.log(booleanLoggedIn); */
+// console.log(booleanLoggedIn);
+
+// output - false for 0 and ture for any value above 1
 
 let someNumber = 33
 

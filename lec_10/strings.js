@@ -10,7 +10,6 @@ const gameName = new String("Aadiraj");
 
 // console.log(gameName[0]);
 
-
 // console.log(gameName.__proto__);
 
 // console.log(gameName.length);

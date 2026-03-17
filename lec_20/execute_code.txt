@@ -1,0 +1,38 @@
+#how is code run in javascript 
+
+let val1 = 5;
+let val2 = 10 
+
+function addNum(num1 , num2){
+    let total = num1 + num2;
+    return total;
+}
+
+let result1 = addNum(val1 , val2);
+
+let result2 = addNum(5 ,12);
+
+
+Steps:
+ 
+1. Global Execution ( this )
+
+2. Memory Phase ( all variable are gathered )
+ex val1 -> undefined 
+   val2 -> undefined 
+   addNum -> defination 
+   result1 -> undefined 
+   result2 -> undefined 
+
+3. Execution Phase
+    val1 <- 5 
+    val2 <- 10 
+                new Variable
+                environment
+    add New ->      +
+                Execution    ----------------> -----------------> Memory Phase :
+                Thread                       Execution             val1 -> undefined
+                (Gets delete later)          Context:              val2 -> undefined
+                                             num1 <- 10            total -> undefined
+                                             num2 <- 15           
+                                             total <- 15

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //setTimeout(/*handler , a fn reference can also be passed*/function(){
+    //    console.log('Hello')
+    //},2000)
+
+    const sayAadiraj = function(){
+        console.log('My name is Aadiraj')
+    }
+
+    const changeH = function(){
+        document.querySelector('h1').innerHTML = "It was nice meeting you"
+    }
+
+
+    const changeText = setTimeout(changeH , 2000)
+
+    document.querySelector('#stop').addEventListener('click' , function(e){
+        clearTimeout(changeText)
+        console.log('stopped')
+    })
+
+
+
+
+</script>
+</html>

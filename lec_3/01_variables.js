@@ -1,3 +1,5 @@
+// different types of data types mostly used is var
+
 const accountId = 1445
 let accountEmail = "aadiraj@gmail.com"
 var accountPassword = "12345"
